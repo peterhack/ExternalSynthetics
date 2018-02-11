@@ -6,9 +6,9 @@ import logging
 import os
 
 YOUR_DT_API_URL = 'https://uji38866.live.dynatrace.com'; #For Dynatrace Managed use https://{owndomain}/e/{id}
-YOUR_DT_API_TOKEN = 'oWo12TQESsib2zijzm0N3';
+YOUR_DT_API_TOKEN = '';
 
-URL_TO_TEST = 'http://demo2482444.mockable.io/health';
+URL_TO_TEST = '';
 
 syntheticRequest = requests.get(URL_TO_TEST);
 responseTime = syntheticRequest.elapsed.total_seconds();
@@ -33,7 +33,7 @@ payload = {
         "id": "3",
         "title": "mockable.io",
         "testSetup":  "Python script",
-        "drilldownLink": "http://demo2482444.mockable.io/health",
+        "drilldownLink": URL_TO_TEST,
         "enabled": True,
         "locations": [ {
             "id": "1",
